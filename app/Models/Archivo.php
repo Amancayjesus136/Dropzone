@@ -9,6 +9,7 @@ class Archivo extends Model
     protected $table = 'archivos';
 
     protected $fillable = [
+        'title',
         'nombre',
     ];
 

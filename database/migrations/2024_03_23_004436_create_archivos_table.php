@@ -15,8 +15,8 @@ class CreateArchivosTable extends Migration
     {
         Schema::create('archivos', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->string('nombre');
-            $table->string('ruta');
             $table->timestamps();
         });
     }

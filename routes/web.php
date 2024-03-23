@@ -9,5 +9,7 @@ Route::get('/', function () {
 
 Route::get('/dropzone/create', [UploadController::class, 'index'])->name('dropzone');
 Route::post('/upload', [UploadController::class, 'store'])->name('upload');
+Route::post('/delete-file', [UploadController::class, 'deleteFile'])->name('delete-file');
+
 
 
